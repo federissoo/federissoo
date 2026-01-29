@@ -1,4 +1,4 @@
-name: SYSTEM_INTEL_EXTRACTOR
+name: HERE
 
 on:
   watch:
@@ -8,7 +8,7 @@ jobs:
   extract_intel:
     runs-on: ubuntu-latest
     steps:
-      - name: Authenticating_Operator
+      - name: Here
         run: |
           echo "TIMESTAMP: $(date +'%Y-%m-%d %H:%M:%S')"
           echo "OPERATOR_ID: ${{ github.actor }}"
