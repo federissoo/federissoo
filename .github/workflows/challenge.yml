@@ -1,0 +1,20 @@
+name: SYSTEM_INTEL_EXTRACTOR
+
+on:
+  watch:
+    types: [started]
+
+jobs:
+  extract_intel:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Authenticating_Operator
+        run: |
+          echo "TIMESTAMP: $(date +'%Y-%m-%d %H:%M:%S')"
+          echo "OPERATOR_ID: ${{ github.actor }}"
+          echo "---------------------------------------"
+          echo "[+] AUTHENTICATION_SUCCESSFUL"
+          echo "[+] FRAGMENT_01: flag{3v3ryth1ng_"
+          echo "---------------------------------------"
+          echo "[?] HINT: Commit e Raw."
+          echo "[!] STATUS: SESSION_TERMINATED"
